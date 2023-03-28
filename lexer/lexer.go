@@ -51,6 +51,7 @@ func (l *Lexer) NextToken() token.Token {
 		tok.Type = token.EOF
 		tok.Literal = ""
 	}
+
 	l.readChar()
 	return tok
 }
